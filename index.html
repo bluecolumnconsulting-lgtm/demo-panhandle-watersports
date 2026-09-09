@@ -105,7 +105,10 @@ footer a{color:#cfeaf4;text-decoration:none}
 .bot-input button{background:var(--sea);color:#fff;border:none;padding:0 18px;font-weight:700;cursor:pointer}
 #bot-mute{background:none;border:none;cursor:pointer;font-size:1.05rem;color:#fff;margin-left:auto}
 .talking{animation:bob .5s ease-in-out infinite alternate}
-@keyframes bob{from{transform:translateY(0) rotate(-2deg)}to{transform:translateY(-6px) rotate(2deg)}}
+@keyframes bob{from{translate:0 0}to{translate:0 -6px}}
+#bot-avatar{transform-origin:50% 88%;will-change:transform}
+.hero-dolphin img{animation:breathe 3.4s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,.985)}}
 
 @media(max-width:700px){
   nav.main ul{display:none}
@@ -286,18 +289,46 @@ const INTENTS = [
 ];
 const FALLBACK = {a:"fallback", t:"Good one. I know pricing, Shell Island, dolphins, licenses, and getting you booked. Try me on one of those — or call the crew at (850) 296-9123."};
 
-/* Audio engine: pre-rendered MP3 per intent; browser voice as fallback */
-let muted=false, currentAudio=null;
+/* Audio engine: pre-rendered MP3 per intent; browser voice as fallback.
+   Mouth animation: Web Audio analyser drives squash-and-stretch on the avatar
+   (FenceBot-style viseme energy, simplified) - Skippy squishes as he talks. */
+let muted=false, currentAudio=null, mouthRAF=null, audioCtx=null, analyser=null, mouthData=null;
 const log=document.getElementById('bot-log'), botIn=document.getElementById('bot-in'), avatar=document.getElementById('bot-avatar');
+function stopMouth(){ if(mouthRAF){cancelAnimationFrame(mouthRAF);mouthRAF=null;} avatar.style.transform=''; avatar.classList.remove('talking'); }
+function startMouth(){
+  if(!currentAudio) return;
+  try{
+    audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)();
+    const src = audioCtx.createMediaElementSource(currentAudio);
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 256;
+    src.connect(analyser); analyser.connect(audioCtx.destination);
+    mouthData = new Uint8Array(analyser.frequencyBinCount);
+  }catch(e){ /* analyser unavailable - keep CSS bob */ }
+  const tick=()=>{
+    if(!currentAudio || currentAudio.paused){ stopMouth(); return; }
+    let energy=0;
+    if(analyser && mouthData){
+      analyser.getByteFrequencyData(mouthData);
+      let sum=0; for(let i=2;i<40;i++){sum+=mouthData[i];}
+      energy=sum/38/255;
+    }else{ energy=.5+.5*Math.sin(Date.now()/90); }
+    const squish=1+energy*.12, stretch=1-energy*.09;
+    avatar.style.transform='scaleY('+squish.toFixed(3)+') scaleX('+stretch.toFixed(3)+')';
+    mouthRAF=requestAnimationFrame(tick);
+  };
+  mouthRAF=requestAnimationFrame(tick);
+}
 function playAudio(name){
   if(muted)return;
   try{
+    stopMouth();
     if(currentAudio){currentAudio.pause();}
     currentAudio=new Audio('audio/'+name+'.mp3');
     avatar.classList.add('talking');
-    currentAudio.onended=()=>avatar.classList.remove('talking');
-    currentAudio.play().catch(()=>avatar.classList.remove('talking'));
-  }catch(e){avatar.classList.remove('talking');}
+    currentAudio.onended=stopMouth;
+    currentAudio.play().then(startMouth).catch(stopMouth);
+  }catch(e){stopMouth();}
 }
 function toggleMute(){muted=!muted;document.getElementById('bot-mute').textContent=muted?'🔇':'🔊';if(muted&&currentAudio)currentAudio.pause();}
 function el(t,cls){const d=document.createElement('div');d.className=cls;d.textContent=t;log.appendChild(d);log.scrollTop=log.scrollHeight;return d;}
