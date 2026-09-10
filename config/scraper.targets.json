@@ -1,0 +1,153 @@
+{
+  "industry": "beach_watersports",
+  "disableOldIndustry": true,
+  "oldIndustryPatterns": [
+    "skimmer",
+    "reef",
+    "aquarium",
+    "ottomedic",
+    "fence"
+  ],
+  "domains": {
+    "rateLimitMs": 2500,
+    "maxConcurrency": 2
+  },
+  "targets": [
+    {
+      "id": "pcb_travel_reddit_intent",
+      "lead_type": "consumer_intent",
+      "adapter": "RedditAdapter",
+      "enabled": true,
+      "tier": "free",
+      "interval_minutes": 240,
+      "subreddits": [
+        "panamacitybeach",
+        "ShellIsland",
+        "dolphins",
+        "florida",
+        "DestinFlorida",
+        "beachtravel"
+      ],
+      "queries": [
+        "dolphin tour",
+        "shell island ferry",
+        "worth the money",
+        "jet ski danger",
+        "shell island how to get",
+        "jet ski rental PCB",
+        "panama city beach dolphins"
+      ],
+      "extract": {
+        "fields": [
+          "title",
+          "url",
+          "date",
+          "excerpt",
+          "author",
+          "subreddit"
+        ]
+      }
+    },
+    {
+      "id": "pcb_travel_forum_intent",
+      "lead_type": "consumer_intent",
+      "adapter": "GenericForumAdapter",
+      "enabled": true,
+      "tier": "free",
+      "interval_minutes": 360,
+      "seedUrls": [
+        "https://www.tripadvisor.com/Search?q={QUERY}",
+        "https://www.reddit.com/search/?q={QUERY}"
+      ],
+      "queries": [
+        "shell island worth it",
+        "dolphin tour pcb",
+        "jet ski shell island",
+        "panhandle watersports",
+        "shell island ferry vs jet ski",
+        "pcb dolphin cruise"
+      ],
+      "extract": {
+        "fields": [
+          "title",
+          "url",
+          "date",
+          "excerpt",
+          "author",
+          "replies"
+        ]
+      }
+    },
+    {
+      "id": "condo_vacation_rental_partners",
+      "lead_type": "b2b_partner",
+      "adapter": "GenericDirectoryAdapter",
+      "enabled": true,
+      "tier": "low_cost",
+      "interval_minutes": 2880,
+      "seedUrls": [
+        "https://www.yelp.com/search?find_desc=vacation+rental+management&find_loc={LOCATION}",
+        "https://www.google.com/maps/search/condo+rentals+{LOCATION}"
+      ],
+      "locations": [
+        "Panama City Beach, FL",
+        "Panama City, FL",
+        "Lynn Haven, FL"
+      ],
+      "extract": {
+        "fields": [
+          "company_name",
+          "website",
+          "contact_url",
+          "location",
+          "phone",
+          "rating",
+          "reviews_count"
+        ]
+      }
+    },
+    {
+      "id": "tourism_boards",
+      "lead_type": "b2b_partner",
+      "adapter": "GenericDirectoryAdapter",
+      "enabled": true,
+      "tier": "free",
+      "interval_minutes": 10080,
+      "seedUrls": [
+        "https://www.visitpanamacitybeach.com/listings/",
+        "https://www.floridasbeach.com/"
+      ],
+      "extract": {
+        "fields": [
+          "company_name",
+          "website",
+          "contact_url",
+          "location",
+          "category"
+        ]
+      }
+    },
+    {
+      "id": "investor_portfolios",
+      "lead_type": "investor",
+      "adapter": "GenericPortfolioAdapter",
+      "enabled": true,
+      "tier": "low_cost",
+      "interval_minutes": 10080,
+      "seedUrls": [
+        "https://www.crunchbase.com/search/organizations/field/organizations/categories/travel",
+        "https://www.crunchbase.com/search/organizations/field/organizations/categories/outdoors"
+      ],
+      "extract": {
+        "fields": [
+          "firm_name",
+          "partner_names",
+          "thesis_excerpt",
+          "contact_url",
+          "portfolio_companies",
+          "investment_stage"
+        ]
+      }
+    }
+  ]
+}
