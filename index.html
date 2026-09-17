@@ -6,559 +6,288 @@
 <title>Panhandle Watersports — Jet Ski Rentals on Panama City Beach | Shell Island Rides</title>
 <meta name="description" content="The largest jet ski operator on Panama City Beach — 50+ latest-model Yamaha VX skis at 10 beach booths. Unguided rides near Shell Island. Dolphins included.">
 <!-- DEMO SITE — built by BlueColumn AI as a sales demo for Panhandle Watersports. Not affiliated with panhandlewatersports.com. -->
-<!-- Art direction: "Warm Editorial Postcard" — BlueColumn Living Fingerprint 003 -->
-<link rel="icon" type="image/png" href="photos/skippy-64.png?v=20260916b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,100..900,0..100;1,9..144,100..900,0..100&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#FAF3E7;      /* sun-cream paper */
-  --ink:#0E4B5A;        /* deep teal ink */
-  --sand:#E8DFC9;       /* sand */
-  --coral:#D96C3F;      /* faded coral — sparing accent */
-  --ink-70:rgba(14,75,90,.7);
-  --ink-40:rgba(14,75,90,.4);
-  --ink-15:rgba(14,75,90,.15);
-  --paper-70:rgba(250,243,231,.7);
-  --rule:rgba(14,75,90,.28);
-  --serif:'Fraunces',Georgia,serif;
-  --sans:'Karla',Verdana,sans-serif;
+  --deep:#05445e; --sea:#189ad3; --turq:#56cfe1; --sun:#ffb703; --coral:#fb5607;
+  --sand:#fff9ef; --ink:#0b2537; --muted:#587487; --line:#d9edf2;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-html,body{overflow-x:clip}
-body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
-.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:10px 16px;z-index:200}
-.skip:focus{left:8px;top:8px}
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:var(--serif);font-weight:560;line-height:1.08;letter-spacing:-.015em;font-variation-settings:"SOFT" 60}
-.kicker{font-family:var(--serif);font-style:italic;font-weight:480;color:var(--coral);font-size:1.15rem;display:block;margin-bottom:14px;letter-spacing:0}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 26px;border-radius:2px;font-family:var(--sans);font-weight:700;font-size:.98rem;letter-spacing:.02em;text-decoration:none;border:1.5px solid var(--coral);cursor:pointer;transition:background-color .18s ease,color .18s ease,border-color .18s ease}
-.btn-solid{background:var(--coral);color:#FFF8EF}
-.btn-solid:hover{background:#C25A31;border-color:#C25A31}
-.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
-.btn-ghost:hover{background:var(--ink);color:var(--paper)}
-.btn-ghost.on-paper{color:var(--paper);border-color:var(--paper)}
-.btn-ghost.on-paper:hover{background:var(--paper);color:var(--ink)}
+body{font-family:'Inter','SF Pro Text',-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--sand);line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h2.sec{font-size:2rem;margin-bottom:.4em}
+p.sub{color:var(--muted);margin-bottom:2.2rem;max-width:660px}
 
-/* ── Masthead: print-inspired edition line ─────────────────── */
-.mast-top{border-bottom:1px solid var(--rule)}
-.mast-top .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-.mast-top .edition{font-family:var(--serif);font-style:italic;font-weight:480;text-transform:none;letter-spacing:.02em;font-size:.85rem}
-.mast-core{display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding-top:26px;padding-bottom:18px;flex-wrap:wrap}
-.wordmark{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4.4vw,2.9rem);letter-spacing:-.01em;text-decoration:none;font-variation-settings:"SOFT" 80}
-.wordmark .amp{color:var(--coral);font-style:italic;font-weight:480}
-.mast-tag{font-size:.85rem;color:var(--ink-70);max-width:300px;text-align:right}
-.mainnav{display:flex;align-items:center;gap:26px;border-top:1px solid var(--rule);border-bottom:2px solid var(--ink);padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
-.mainnav a.navlink{text-decoration:none;font-weight:700;font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 2px;min-height:44px;display:inline-flex;align-items:center}
-.mainnav a.navlink:hover{color:var(--coral)}
-.mainnav .phone{margin-left:auto;font-family:var(--serif);font-style:italic;font-size:1.02rem;text-decoration:none;padding:8px 2px}
-.mainnav .phone:hover{color:var(--coral)}
-.mainnav .btn{padding:8px 20px;min-height:44px;font-size:.88rem}
+.topbar{background:var(--deep);color:#cfeaf4;font-size:.85rem;padding:8px 0}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.topbar b{color:#fff}
+.topbar a{color:var(--sun);font-weight:700;text-decoration:none}
+nav.main{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+nav.main .wrap{display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+.logo{font-weight:800;font-size:1.2rem;display:flex;align-items:center;gap:8px}
+.logo img{width:34px;height:34px;border-radius:50%;object-fit:cover}
+nav.main ul{display:flex;gap:16px;list-style:none}
+nav.main a.navlink{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+.cta{display:inline-block;background:var(--sun);color:#241a00;padding:11px 24px;border-radius:8px;font-weight:800;text-decoration:none;border:none;cursor:pointer;font-size:.95rem}
+.cta:hover{filter:brightness(1.05)}
+.cta.ghost{background:transparent;color:#fff;border:2px solid #fff}
 
-/* ── Hero: editorial split, stamp right ────────────────────── */
-.hero{padding:64px 0 84px}
-.hero-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:32px;align-items:center}
-.hero-copy{grid-column:1/5}
-.hero-copy h1{font-size:clamp(2.5rem,6vw,4.4rem);max-width:14ch}
-.hero-copy h1 em{font-style:italic;font-weight:480;color:var(--coral);font-variation-settings:"SOFT" 100}
-.hero-copy .lead{margin:22px 0 30px;font-size:1.13rem;line-height:1.65;max-width:46ch;color:var(--ink)}
-.hero-copy .lead b{font-weight:700}
+header.hero{background:linear-gradient(165deg,var(--deep) 0%,var(--sea) 60%,var(--turq) 100%);color:#fff;padding:64px 0 78px;position:relative;overflow:hidden}
+header.hero::before{content:"";position:absolute;bottom:-2px;left:-10%;width:120%;max-width:140%;height:60px;background:var(--sand);border-radius:50% 50% 0 0/100% 100% 0 0}
+header.hero .wrap{position:relative;z-index:1;display:flex;gap:36px;align-items:center}
+.hero-main{flex:1}
+.hero-chips{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:5px 14px;font-size:.8rem;font-weight:600}
+header.hero h1{font-size:clamp(1.8rem,5vw,2.7rem);line-height:1.12;font-weight:800;max-width:720px}
+header.hero h1 em{color:var(--sun);font-style:normal}
+header.hero p.lead{margin:18px 0 30px;font-size:clamp(.97rem,2.2vw,1.12rem);color:#d9f1f8;max-width:600px}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
-.hero-note{margin-top:20px;font-size:.85rem;color:var(--ink-70)}
+.hero-dolphin{width:230px;flex-shrink:0;filter:drop-shadow(0 18px 30px rgba(0,0,0,.3));}
+.hero-dolphin img{width:100%;border-radius:24px;display:block}
+@media(max-width:860px){header.hero .wrap{flex-direction:column}.hero-dolphin{display:none}}
 
-/* The postcard stamp */
-.stamp-col{grid-column:5/7;justify-self:end;width:100%;max-width:380px}
-.stamp{position:relative;background:#FFFDF6;padding:12px 12px 14px;border:1px solid var(--ink-15);box-shadow:0 14px 28px rgba(14,75,90,.14);transform:rotate(1.6deg)}
-.stamp img{width:100%;aspect-ratio:1/1;object-fit:cover;filter:url(#duo-teal)}
-.stamp-frames{position:absolute;inset:8px;border:1px solid var(--ink-40);pointer-events:none}
-.stamp-caption{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:.98rem;color:var(--ink-70);line-height:1.45;transform:rotate(1.6deg)}
-.stamp-no{font-family:var(--sans);font-style:normal;font-weight:700;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);display:block;margin-top:6px}
-.postmark{position:absolute;top:-20px;right:-8px;width:104px;height:104px;transform:rotate(-9deg);opacity:.9}
+section{padding:56px 0}
+section.alt{background:#fff}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+@media(max-width:860px){.grid4,.grid3,.grid2{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{margin-bottom:8px;font-size:1.1rem}
+.card p{color:var(--muted);font-size:.93rem}
+.card ul{margin:10px 0 0 18px;color:var(--muted);font-size:.9rem}
+.card ul li{margin-bottom:4px}
+.badge{display:inline-block;background:var(--sun);color:#241a00;font-size:.72rem;font-weight:800;border-radius:999px;padding:3px 10px;margin-bottom:10px}
+.cardphoto{width:calc(100% + 48px);margin:-24px -24px 16px;height:150px;object-fit:cover;display:block}
+.ph{background:var(--deep);border-radius:12px;aspect-ratio:4/3;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
 
-/* ── Pull-fact band (sand) ─────────────────────────────────── */
-.facts{background:var(--sand);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:44px 0}
-.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
-.fact{padding-left:26px;border-left:2px solid var(--ink)}
-.fact:first-child{border-left:none;padding-left:0}
-.fact .n{font-family:var(--serif);font-weight:560;font-size:clamp(2.6rem,4.5vw,3.6rem);line-height:1;letter-spacing:-.02em;font-variation-settings:"SOFT" 70}
-.fact .n sup{font-size:.45em;font-style:italic;font-weight:480;color:var(--coral)}
-.fact p{margin-top:8px;font-size:.94rem;color:var(--ink-70);max-width:30ch}
+.strip{background:linear-gradient(135deg,#033647,#05445e);color:#fff;border-radius:14px;padding:34px;text-align:center}
+.strip b{color:var(--sun)}
+.strip .big{font-size:1.5rem;font-weight:800;margin-bottom:6px}
 
-/* ── Sections ──────────────────────────────────────────────── */
-section{padding:76px 0}
-.sec-head{display:grid;grid-template-columns:repeat(6,1fr);gap:32px;margin-bottom:44px;align-items:end}
-.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);grid-column:1/4}
-.sec-head .sub{grid-column:4/7;color:var(--ink-70);font-size:1.02rem;max-width:44ch;justify-self:end}
-.sec-head .sub a{color:var(--coral)}
+.step{display:flex;gap:16px;align-items:flex-start}
+.step .n{background:var(--coral);color:#fff;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0}
 
-/* Ride: ruled rows, not cards */
-.rides{border-top:1px solid var(--rule)}
-.ride-row{display:grid;grid-template-columns:190px 1fr 220px;gap:28px;padding:30px 0;border-bottom:1px solid var(--rule);align-items:baseline}
-.ride-row .when{font-family:var(--serif);font-style:italic;font-weight:480;font-size:1.5rem;color:var(--coral);letter-spacing:0}
-.ride-row h3{font-size:1.45rem;margin-bottom:6px}
-.ride-row .desc{color:var(--ink-70);font-size:.98rem;max-width:56ch}
-.ride-row .aside{font-size:.85rem;color:var(--ink-70);border-left:1px solid var(--rule);padding-left:20px}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:16px 20px}
+details summary{font-weight:700;cursor:pointer}
+details p{color:var(--muted);margin-top:8px;font-size:.93rem}
 
-/* Photo interlude */
-.interlude figure{margin:0}
-.interlude img{width:100%;height:auto;border-radius:2px}
-.interlude .ph-main{width:88%}
-.interlude figcaption{display:flex;justify-content:space-between;gap:24px;margin-top:14px;font-family:var(--serif);font-style:italic;color:var(--ink-70);font-size:1.05rem}
-.interlude .ph-no{font-family:var(--sans);font-style:normal;font-weight:700;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);white-space:nowrap;padding-top:4px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}}
+label{font-weight:600;font-size:.88rem;display:block;margin-bottom:5px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;font-size:.95rem;font-family:inherit;background:#fff}
+.full{grid-column:1/-1}
 
-/* Shell Island: asymmetric split with overlapping photo */
-.island-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:32px;align-items:start}
-.island-copy{grid-column:1/4}
-.island-copy h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:18px}
-.island-copy p{color:var(--ink-70);font-size:1.02rem;max-width:46ch}
-.island-copy p+p{margin-top:14px}
-.island-copy .pull{margin-top:26px;font-family:var(--serif);font-style:italic;font-size:1.3rem;line-height:1.4;color:var(--ink);border-left:2px solid var(--coral);padding-left:20px;max-width:34ch}
-.island-photos{grid-column:4/7;position:relative;padding-bottom:56px}
-.island-photos .ph-a{width:88%;margin-left:auto}
-.island-photos .ph-b{position:absolute;left:0;bottom:0;width:52%;background:#FFFDF6;padding:10px 10px 12px;border:1px solid var(--ink-15);box-shadow:0 10px 22px rgba(14,75,90,.14);transform:rotate(-1.8deg)}
-.island-photos .ph-b img{aspect-ratio:4/3;object-fit:cover;width:100%}
-.island-photos .ph-b figcaption{margin-top:8px;font-family:var(--serif);font-style:italic;font-size:.85rem;color:var(--ink-70)}
-
-/* How it works: numbered, asymmetric */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
-.step{border-top:2px solid var(--ink);padding-top:20px}
-.step:nth-child(2){margin-top:44px}
-.step:nth-child(3){margin-top:88px}
-.step .no{font-family:var(--serif);font-weight:560;font-size:3.2rem;line-height:1;color:var(--coral);font-variation-settings:"SOFT" 70}
-.step h3{font-size:1.35rem;margin:12px 0 8px}
-.step p{color:var(--ink-70);font-size:.96rem;max-width:32ch}
-
-/* Postcards gallery */
-.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:28px}
-.g-item{margin:0}
-.g-item img{width:100%;height:auto;object-fit:cover;border-radius:2px}
-.g-item figcaption{margin-top:10px;font-family:var(--serif);font-style:italic;font-size:.98rem;color:var(--ink-70)}
-.g-4{grid-column:span 4}.g-3{grid-column:span 3}.g-2{grid-column:span 2}
-.g-item.tall img{aspect-ratio:4/5}
-.g-item.wide img{aspect-ratio:16/10}
-.g-item.sq img{aspect-ratio:1/1}
-
-/* Find us + booking */
-.book{background:var(--sand);border-top:1px solid var(--rule)}
-.book-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:40px;align-items:start}
-.book-info{grid-column:1/4}
-.book-info h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:16px}
-.book-info .booth-photo{margin:22px 0 26px;background:#FFFDF6;padding:10px 10px 12px;border:1px solid var(--ink-15);transform:rotate(-1.2deg)}
-.book-info .booth-photo img{aspect-ratio:3/2;object-fit:cover;width:100%}
-.book-info .booth-photo figcaption{margin-top:8px;font-family:var(--serif);font-style:italic;font-size:.85rem;color:var(--ink-70)}
-.info-list{list-style:none;border-top:1px solid var(--rule)}
-.info-list li{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid var(--rule);font-size:.95rem}
-.info-list .k{font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-70);padding-top:3px}
-.info-list a{color:var(--coral);text-decoration:none;font-weight:700}
-.info-list a:hover{text-decoration:underline}
-.book-form{grid-column:4/7;background:#FFFDF6;border:1px solid var(--ink-15);padding:32px;box-shadow:0 14px 28px rgba(14,75,90,.1)}
-.book-form h3{font-size:1.6rem;margin-bottom:6px}
-.book-form .fh{font-size:.92rem;color:var(--ink-70);margin-bottom:22px}
-.book-form .fh b{color:var(--coral)}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.fw{grid-column:1/-1}
-label{font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:6px}
-input,select,textarea{width:100%;min-height:48px;padding:11px 12px;border:1px solid var(--ink-40);border-radius:2px;font-size:.98rem;font-family:var(--sans);background:#fff;color:var(--ink)}
-textarea{min-height:74px;resize:vertical}
-input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:2px solid var(--coral);outline-offset:1px}
-.book-form .btn{width:100%;margin-top:22px}
-#form-ok{display:none;margin-top:14px;font-weight:700;color:#1D6B4E;font-size:.95rem}
-
-/* Demo note + footer */
-.demo-note{background:var(--sand);border-top:1px solid var(--rule);font-size:.8rem;text-align:center;padding:10px 20px;color:var(--ink-70)}
-.demo-note b{color:var(--ink)}
-footer{background:var(--ink);color:var(--paper);padding:64px 0 30px}
-.foot-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:36px;padding-bottom:40px;border-bottom:1px solid rgba(250,243,231,.25)}
-.foot-brand{grid-column:1/4}
-.foot-brand .fm{font-family:var(--serif);font-weight:600;font-size:1.7rem;font-variation-settings:"SOFT" 80}
-.foot-brand .fm .amp{color:var(--coral);font-style:italic;font-weight:480}
-.foot-brand p{margin-top:10px;font-size:.92rem;color:var(--paper-70);max-width:40ch}
-.foot-col{grid-column:span 1}
-.foot-col.wide{grid-column:span 2}
-footer h4{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);margin-bottom:14px}
+footer{background:#03293a;color:#9dc3d2;padding:56px 0 28px;font-size:.92rem}
+footer h4{color:#fff;margin-bottom:12px}
 footer ul{list-style:none}
-footer li{margin-bottom:9px;font-size:.93rem;color:var(--paper-70)}
-footer a{text-decoration:none;color:var(--paper)}
-footer a:hover{color:var(--coral)}
-.colophon{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;font-size:.8rem;color:var(--paper-70)}
+footer li{margin-bottom:6px}
+footer a{color:#cfeaf4;text-decoration:none}
+.foot-bottom{border-top:1px solid #0c3b52;margin-top:36px;padding-top:20px;text-align:center;font-size:.82rem}
+.demo-note{background:#fff3d6;border:1px solid #f0dca4;color:#7a5a1e;font-size:.8rem;text-align:center;padding:8px}
 
-/* ── Sandy — beach concierge card (marina-agent wiring intact) ── */
-#bot-fab{position:fixed;bottom:20px;right:20px;z-index:100;display:flex;align-items:center;gap:10px;background:var(--ink);color:var(--paper);border:none;border-radius:2px;padding:7px 18px 7px 7px;min-height:56px;font-family:var(--sans);font-weight:700;font-size:.95rem;letter-spacing:.02em;cursor:pointer;box-shadow:0 10px 26px rgba(14,75,90,.35)}
-#bot-fab:hover{background:#0A3B47}
-#bot-fab img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--coral)}
-#bot-panel{position:fixed;bottom:88px;right:20px;width:364px;max-width:calc(100vw - 32px);background:var(--paper);border:1px solid var(--ink-15);border-radius:4px;box-shadow:0 18px 48px rgba(14,75,90,.3);z-index:101;display:none;flex-direction:column;overflow:hidden}
+/* Dolphin audio bot */
+#bot-fab{position:fixed;bottom:22px;right:22px;z-index:100;background:#fff;border:none;border-radius:999px;padding:6px 18px 6px 6px;font-weight:800;font-size:.95rem;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.3);display:flex;align-items:center;gap:10px;color:var(--ink)}
+#bot-fab img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:3px solid var(--sun)}
+#bot-panel{position:fixed;bottom:84px;right:22px;width:350px;max-width:calc(100vw - 32px);background:#fff;border-radius:16px;box-shadow:0 14px 44px rgba(0,0,0,.34);z-index:101;display:none;flex-direction:column;overflow:hidden}
 #bot-panel.open{display:flex}
-.bot-head{display:flex;align-items:center;gap:10px;background:#FFFDF6;border-bottom:2px solid var(--coral);padding:10px 12px}
-.bot-head img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--coral)}
-.bot-head .who b{font-family:var(--serif);font-weight:600;font-size:1.08rem;display:block;line-height:1.2}
-.bot-head .who small{display:block;font-size:.74rem;color:var(--ink-70);line-height:1.3}
-.bot-head .ctl{margin-left:auto;display:flex;gap:2px}
-#bot-mute,#bot-mic,#bot-video{background:none;border:none;cursor:pointer;font-family:var(--sans);font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-70);padding:8px 7px;min-height:44px;min-width:40px;border-radius:2px}
-#bot-mute:hover,#bot-mic:hover,#bot-video:hover{color:var(--ink)}
-#bot-mic.on,#bot-video.on{color:var(--coral)}
+.bot-head{background:linear-gradient(135deg,var(--deep),var(--turq));color:#fff;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.bot-head img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--sun)}
+.bot-head small{display:block;opacity:.85;font-weight:400}
+#bot-log{padding:14px;height:300px;overflow-y:auto;background:#f1fafc;display:flex;flex-direction:column;gap:8px}
+.msg{max-width:85%;padding:9px 13px;border-radius:12px;font-size:.9rem;white-space:pre-line}
+.msg.bot{background:#fff;border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:3px}
+.msg.user{background:var(--sea);color:#fff;align-self:flex-end;border-bottom-right-radius:3px}
+.bot-opts{display:flex;flex-wrap:wrap;gap:6px;align-self:flex-start}
+.bot-opts button{background:#fff;border:1.5px solid var(--turq);color:var(--deep);border-radius:999px;padding:5px 12px;font-size:.82rem;font-weight:700;cursor:pointer}
+.bot-opts button.on{background:var(--turq);color:#fff}
+.bot-input{display:flex;border-top:1px solid var(--line)}
+.bot-input input{border:none;border-radius:0;flex:1}
+.bot-input button{background:var(--sea);color:#fff;border:none;padding:0 18px;font-weight:700;cursor:pointer}
+#bot-mute{background:none;border:none;cursor:pointer;font-size:1.05rem;color:#fff;margin-left:auto}
+.fab-ava{width:46px;height:46px;border-radius:50%;border:3px solid var(--sun);background:linear-gradient(135deg,var(--deep),var(--sea));display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+
+/* Marina agent additions (live brain · dynamic voice · video avatar) — contained to the bot panel, page layout unchanged */
+.bot-ctl{background:none;border:none;cursor:pointer;font-size:1rem;color:#fff;padding:2px 4px;margin-left:4px;opacity:.85}
+.bot-ctl:hover{opacity:1}
+.bot-ctl.on{color:var(--sun);opacity:1}
 #bot-video-wrap{display:none;position:relative;background:#000}
 #bot-panel.video-mode #bot-video-wrap{display:block}
 #bot-video-el{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
-#bot-video-live{position:absolute;top:8px;left:8px;background:var(--coral);color:#FFF8EF;font-size:.62rem;font-weight:800;letter-spacing:.1em;padding:3px 8px;border-radius:2px;display:flex;align-items:center;gap:5px}
-#bot-video-live i{width:6px;height:6px;border-radius:50%;background:#FFF8EF;display:inline-block;animation:vblink 1.2s infinite}
+#bot-video-live{position:absolute;top:8px;left:8px;background:rgba(220,40,40,.9);color:#fff;font-size:.62rem;font-weight:800;padding:2px 8px;border-radius:999px;display:flex;align-items:center;gap:4px;letter-spacing:.5px}
+#bot-video-live i{width:6px;height:6px;border-radius:50%;background:#fff;display:inline-block;animation:vblink 1.2s infinite}
 @keyframes vblink{50%{opacity:.15}}
-#bot-log{padding:14px;height:300px;overflow-y:auto;background:var(--paper);display:flex;flex-direction:column;gap:8px}
-.msg{max-width:86%;padding:10px 13px;border-radius:2px;font-size:.9rem;white-space:pre-line;line-height:1.5}
-.msg.bot{background:#FFFDF6;border:1px solid var(--ink-15);align-self:flex-start}
-.msg.user{background:var(--ink);color:var(--paper);align-self:flex-end}
-.bot-opts{display:flex;flex-wrap:wrap;gap:6px;align-self:flex-start}
-.bot-opts button{background:#FFFDF6;border:1.5px solid var(--ink);color:var(--ink);border-radius:2px;padding:8px 14px;min-height:44px;font-family:var(--sans);font-size:.82rem;font-weight:700;cursor:pointer}
-.bot-opts button:hover{background:var(--ink);color:var(--paper)}
-.bot-input{display:flex;border-top:1px solid var(--ink-15);background:#FFFDF6}
-.bot-input input{border:none;border-radius:0;flex:1;background:transparent;min-height:52px}
-.bot-input input:focus{outline:none}
-.bot-input #bot-send{background:var(--coral);color:#FFF8EF;border:none;padding:0 20px;min-height:52px;font-family:var(--sans);font-weight:700;letter-spacing:.04em;cursor:pointer}
-.bot-input #bot-send:hover{background:#C25A31}
-img#bot-avatar.talking{animation:bob .55s ease-in-out infinite alternate}
-@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-3px)}}
 .bc-typing{display:flex;gap:3px;align-items:center}
-.bc-typing span{width:6px;height:6px;border-radius:50%;background:var(--ink-40);display:inline-block;animation:bdot 1s infinite}
+.bc-typing span{width:6px;height:6px;border-radius:50%;background:var(--muted);display:inline-block;animation:bdot 1s infinite}
 .bc-typing span:nth-child(2){animation-delay:.15s}
 .bc-typing span:nth-child(3){animation-delay:.3s}
 @keyframes bdot{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.hero-dolphin img{animation:breathe 3.4s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,.985)}}
 
-/* ── Responsive recomposition ──────────────────────────────── */
-@media(max-width:980px){
-  .hero-grid{grid-template-columns:1fr;gap:48px}
-  .hero-copy{grid-column:auto}
-  .stamp-col{grid-column:auto;justify-self:start;max-width:400px}
-  .sec-head{grid-template-columns:1fr;gap:14px}
-  .sec-head h2,.sec-head .sub{grid-column:auto;justify-self:start}
-  .island-grid{grid-template-columns:1fr}
-  .island-copy,.island-photos{grid-column:auto}
-  .book-grid{grid-template-columns:1fr}
-  .book-info,.book-form{grid-column:auto}
-  .ride-row{grid-template-columns:120px 1fr;gap:18px}
-  .ride-row .aside{grid-column:2;border-left:none;padding-left:0;border-top:1px dashed var(--rule);padding-top:10px;margin-top:4px}
-  .steps{grid-template-columns:1fr;gap:28px}
-  .step:nth-child(2),.step:nth-child(3){margin-top:0}
-  .foot-brand{grid-column:1/-1}
-  .foot-col{grid-column:span 2}
-  .foot-col.wide{grid-column:span 2}
-}
 @media(max-width:700px){
-  .wrap{padding:0 18px}
-  section{padding:60px 0}
-  .mast-top .wrap{flex-direction:column;gap:2px;align-items:flex-start}
-  .mast-core{padding-top:18px}
-  .mast-tag{display:none}
-  .mainnav{gap:16px}
-  .mainnav .phone{margin-left:0}
-  .mainnav .btn{margin-left:auto}
-  .facts .wrap{grid-template-columns:1fr;gap:22px}
-  .fact{border-left:none;padding-left:0;border-top:1px solid var(--rule);padding-top:16px}
-  .fact:first-child{border-top:none;padding-top:0}
-  .ride-row{grid-template-columns:1fr}
-  .interlude .ph-main{width:100%}
-  .gallery{grid-template-columns:1fr;gap:34px}
-  .g-4,.g-3,.g-2{grid-column:auto}
-  .book-form{padding:22px}
-  .form-grid{grid-template-columns:1fr}
-  .island-photos .ph-b{width:60%}
-  .hero{padding:44px 0 60px}
-  #bot-fab{bottom:calc(14px + env(safe-area-inset-bottom));right:14px;padding:7px 14px 7px 7px;min-height:52px}
-  #bot-panel{bottom:calc(78px + env(safe-area-inset-bottom));max-height:74vh}
-  #bot-log{height:min(280px,46vh)}
-}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  nav.main ul{display:none}
+  .topbar .wrap{flex-direction:column;gap:4px;font-size:.78rem;text-align:center}
+  .hero-ctas a.cta{flex:1;min-width:140px;text-align:center}
+  #bot-fab{bottom:calc(14px + env(safe-area-inset-bottom));right:14px;padding:10px 14px;font-size:.88rem}
+  #bot-panel{bottom:calc(70px + env(safe-area-inset-bottom));max-height:72vh}
+  #bot-log{height:min(280px,48vh)}
+  nav.main .cta{display:none}
+  #bot-fab{right:14px !important}
 }
 </style>
 </head>
-<body id="top">
-<a class="skip" href="#main">Skip to content</a>
+<body>
 
-<!-- Duotone filter: teal ink shadows → sun-cream highlights -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <filter id="duo-teal" color-interpolation-filters="sRGB">
-    <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
-    <feComponentTransfer>
-      <feFuncR type="table" tableValues="0.055 0.98"/>
-      <feFuncG type="table" tableValues="0.294 0.953"/>
-      <feFuncB type="table" tableValues="0.353 0.906"/>
-    </feComponentTransfer>
-  </filter>
-</svg>
-
-<!-- ── Masthead ─────────────────────────────────────────────── -->
-<header>
-  <div class="mast-top">
-    <div class="wrap">
-      <span>Panama City Beach, Florida</span>
-      <span class="edition">The Gulf Coast Edition &middot; Open Daily, Weather Permitting</span>
-    </div>
-  </div>
-  <div class="mast-core wrap">
-    <a class="wordmark" href="#top">Panhandle <span class="amp">Watersports</span></a>
-    <p class="mast-tag">The largest jet ski fleet on Panama City Beach, stationed right on the sand.</p>
-  </div>
-  <nav class="mainnav wrap" aria-label="Primary">
-    <a class="navlink" href="#ride">The Ride</a>
-    <a class="navlink" href="#island">Shell Island</a>
-    <a class="navlink" href="#gallery">Postcards</a>
-    <a class="navlink" href="#book">Find Us</a>
-    <a class="phone" href="tel:8502969123">(850) 296-9123</a>
-    <a class="btn btn-solid" href="#book">Hold My Ski</a>
-  </nav>
-</header>
-
-<main id="main">
-<!-- ── Hero: editorial split ────────────────────────────────── -->
-<section class="hero" aria-label="Introduction">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <span class="kicker">Unguided jet ski rentals, straight off the beach</span>
-      <h1>Right behind your condo. <em>Dolphins down the shore.</em></h1>
-      <p class="lead">Hop on one of <b>50+ latest-model Yamaha VX skis</b> on the sand at Panama City Beach. Thirty minutes or a full hour — no trailer, no dock, no experience needed.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-solid" href="#book">Hold My Ski</a>
-        <a class="btn btn-ghost" href="tel:8502969123">Call (850) 296-9123</a>
-      </div>
-      <p class="hero-note">Life jackets included &middot; Boating licenses issued on-site, good for a full year</p>
-    </div>
-    <div class="stamp-col">
-      <figure class="stamp">
-        <img src="photos/dolphin-cruise-2.webp?v=20260916b" alt="Bottlenose dolphins surfacing in the Gulf near Shell Island, seen on a Panhandle Watersports run" width="800" height="800">
-        <span class="stamp-frames" aria-hidden="true"></span>
-        <svg class="postmark" viewBox="0 0 104 104" aria-hidden="true">
-          <circle cx="52" cy="52" r="49" fill="none" stroke="#0E4B5A" stroke-width="2"/>
-          <circle cx="52" cy="52" r="30" fill="none" stroke="#0E4B5A" stroke-width="1.5"/>
-          <defs><path id="pm-arc" d="M 52 12 A 40 40 0 1 1 51.9 12"/></defs>
-          <text font-family="Karla,Verdana,sans-serif" font-size="10.5" font-weight="700" letter-spacing="2.6" fill="#0E4B5A"><textPath href="#pm-arc">PANAMA CITY BEACH &#183; FLORIDA &#183;</textPath></text>
-          <text x="52" y="58" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-style="italic" font-size="17" fill="#D96C3F">Gulf</text>
-        </svg>
-        <figcaption class="stamp-caption">The locals, on the Shell Island run most days.<span class="stamp-no">Postcard &#8470; 001 &middot; The Channel</span></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ── Pull facts ───────────────────────────────────────────── -->
-<div class="facts" role="region" aria-label="Key facts">
+<div class="topbar">
   <div class="wrap">
-    <div class="fact"><div class="n">50<sup>+</sup></div><p>latest-model Yamaha VX skis — the largest fleet on the beach</p></div>
-    <div class="fact"><div class="n">10</div><p>booths along the sand, one a short walk from your condo</p></div>
-    <div class="fact"><div class="n">1&nbsp;yr</div><p>boating license issued on-site at any booth, good a full year</p></div>
+    <div><b>Largest jet ski operator on the beach</b> · 50+ skis · 10 booths</div>
+    <div>Open Daily · <a href="tel:8502969123">(850) 296-9123</a></div>
   </div>
 </div>
 
-<!-- ── The Ride: ruled rows ─────────────────────────────────── -->
+<nav class="main">
+  <div class="wrap">
+    <div class="logo"><img src="dolphin.jpg" alt="Panhandle Watersports dolphin">PANHANDLE <span style="color:var(--sea)">WATERSPORTS</span></div>
+    <ul>
+      <li><a class="navlink" href="#ride">The Ride</a></li>
+      <li><a class="navlink" href="#island">Shell Island</a></li>
+      <li><a class="navlink" href="#book">Find Us</a></li>
+    </ul>
+    <a class="cta" href="#book">Ride Today</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-main">
+      <div class="hero-chips">
+        <span class="chip">🏄 Unguided Rides</span>
+        <span class="chip">🛥️ 50+ New Yamaha VX Skis</span>
+        <span class="chip">10 Beach Booths</span>
+        <span class="chip">🛟 Life Jackets Included</span>
+      </div>
+      <h1>Right Behind Your Condo.<br><em>Dolphins Down The Shore.</em></h1>
+      <p class="lead">Hop on the latest Yamaha VX skis right on the sand at Panama City Beach. Half-hour blasts or full-hour Shell Island runs — no experience needed, no trailer, no drama.</p>
+      <div class="hero-ctas">
+        <a class="cta" href="#book">Grab A Ski</a>
+        <a class="cta ghost" href="tel:8502969123">Call (850) 296-9123</a>
+      </div>
+    </div>
+    <div class="hero-dolphin"><img src="dolphin.jpg" alt="Skippy the Panhandle Watersports dolphin"></div>
+  </div>
+</header>
+
 <section id="ride">
   <div class="wrap">
-    <div class="sec-head">
-      <h2><span class="kicker">The Ride</span>Unguided means your rules.</h2>
-      <p class="sub">Point it at the horizon or hug the shoreline and cruise. Every rental comes with life jackets and a quick safety briefing — then the Gulf is yours.</p>
-    </div>
-    <div class="rides">
-      <div class="ride-row">
-        <div class="when">30 min</div>
-        <div><h3>The Taste</h3><p class="desc">Half an hour of full-throttle fun — perfect between pool time and dinner. One or two riders, straight off the beach in front of your booth.</p></div>
-        <div class="aside">No experience needed. Briefing takes minutes.</div>
-      </div>
-      <div class="ride-row">
-        <div class="when">1 hour</div>
-        <div><h3>The Full Run</h3><p class="desc">The classic: run the shoreline toward Shell Island, find the dolphins, chase the horizon. The extra minutes are where the good water lives.</p></div>
-        <div class="aside">Wildlife sightings common. Bring a strap for your sunglasses.</div>
-      </div>
-      <div class="ride-row">
-        <div class="when">License</div>
-        <div><h3>No License? No Problem.</h3><p class="desc">Born on or after January 1, 1988? Florida asks for a boater certificate. Take the ~20-minute course online, or get licensed right at any booth — it stays valid a full year.</p></div>
-        <div class="aside">Born before 1988? Just ride.</div>
-      </div>
+    <h2 class="sec">The Ride</h2>
+    <p class="sub">Unguided means your rules. Point it at the horizon, or hug the shoreline and cruise — every rental comes with safety gear and a quick briefing.</p>
+    <div class="grid3">
+      <div class="card"><img class="cardphoto" src="photos/rent-a-jetski.webp" alt="Jet skis ready to rent right on the beach" loading="lazy"><span class="badge">30 MIN</span><h3>The Taste</h3><p>Half an hour of full-throttle fun — perfect between pool time and dinner.</p><ul><li>1 or 2 riders</li><li>Right on the beach</li><li>No experience needed</li></ul></div>
+      <div class="card"><img class="cardphoto" src="photos/jetski-with-dolphins.webp" alt="Riders running the shoreline with dolphins alongside" loading="lazy"><span class="badge">MOST FUN PER MINUTE</span><h3>The Full Hour</h3><p>The classic: run the shoreline, find the dolphins, chase the horizon.</p><ul><li>1 or 2 riders</li><li>Shell Island run in reach</li><li>Wildlife sightings common</li></ul></div>
+      <div class="card"><img class="cardphoto" src="photos/jet-ski-near-you.webp" alt="Jet ski booth right on the sand at Panama City Beach" loading="lazy"><span class="badge">LICENSE ON-SITE</span><h3>No License? No Problem</h3><p>Boating certificates issued right at the booths — good for a full year.</p><ul><li>Online course in ~20 min</li><li>Or get licensed at any booth</li><li>Born before 1988? Just ride</li></ul></div>
     </div>
   </div>
 </section>
 
-<!-- ── Photo interlude ──────────────────────────────────────── -->
-<section class="interlude" aria-label="On the water" style="padding-top:0">
+<div class="strip">
   <div class="wrap">
-    <figure>
-      <div class="ph-main">
-        <img src="photos/majestic-watersports-13.webp?v=20260916b" alt="A rider on a Yamaha VX jet ski carving across emerald-green water in front of Panama City Beach's condo skyline" width="2048" height="1534" loading="lazy">
-      </div>
-      <figcaption><span>Emerald water, condo line on the horizon — this is the whole commute.</span><span class="ph-no">Fig. 01 &middot; The Gulf</span></figcaption>
-    </figure>
+    <div class="big">50+ skis. 10 booths. Zero waiting on the sand.</div>
+    The largest jet ski fleet on Panama City Beach, refreshed with the latest-model <b>Yamaha VX series</b> every season — up to two riders per ski, stationed right on the beach behind the condos.
   </div>
-</section>
+</div>
 
-<!-- ── Shell Island ─────────────────────────────────────────── -->
-<section id="island" style="padding-top:0">
-  <div class="wrap island-grid">
-    <div class="island-copy">
-      <span class="kicker">Shell Island Country</span>
-      <h2>Clear water, sandbars, and the locals everyone came to see.</h2>
-      <p>The water on the Shell Island side is a different animal — crystal clear, shallow, and warm. Bottlenose pods cruise the channel daily. Ride slow along the shore and they'll come say what's up.</p>
-      <p>Sea turtles surface on the quiet stretches. Coves and sandy hooks you'll never spot from a condo balcony sit ten minutes away.</p>
-      <p class="pull">"The dolphins come say what's up." — every rider, eventually.</p>
-    </div>
-    <div class="island-photos">
-      <figure class="ph-a">
-        <img src="photos/rent-a-jetski.webp?v=20260916b" alt="A jet ski rider cruising alongside a group of dolphins in clear shallow water near Shell Island" width="1024" height="768" loading="lazy">
-      </figure>
-      <figure class="ph-b">
-        <img src="photos/jetski-with-dolphins.webp?v=20260916b" alt="Riders on a jet ski pausing in shallow water as dolphins swim close by" width="480" height="360" loading="lazy">
-        <figcaption>Riders pause; the pod doesn't.</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ── How it works ─────────────────────────────────────────── -->
-<section style="padding-top:0">
+<section class="alt" id="island">
   <div class="wrap">
-    <div class="sec-head">
-      <h2><span class="kicker">Sand to spray</span>Three steps, no trailer.</h2>
-      <p class="sub">No dock lines, no boat ramp, no drama. The whole operation lives on the beach behind the condos.</p>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="no">1</div><h3>Walk to the booth</h3><p>Ten booths up and down the sand, including our main booth at 312 Bay Shore Drive. Whoever's closest wins.</p></div>
-      <div class="step"><div class="no">2</div><h3>Gear up, brief up</h3><p>Life jackets on, safety rundown done in minutes. First-timers welcome — genuinely.</p></div>
-      <div class="step"><div class="no">3</div><h3>Point it at the horizon</h3><p>Thirty minutes or a full hour. The Gulf is yours, and the dolphins are downstream.</p></div>
+    <h2 class="sec">Shell Island Country</h2>
+    <p class="sub">Crystal-clear water, sandbars, and the locals everyone comes to see.</p>
+    <div class="grid4">
+      <div class="card"><h3>Dolphins</h3><p>Bottlenose pods cruise the channel daily. Ride slow along the shore and they come say what's up.</p></div>
+      <div class="card"><h3>Sea Turtles</h3><p>Keep an eye out — sightings happen on quiet stretches of the run.</p></div>
+      <div class="card"><h3>Hidden Coves</h3><p>Sandy shores and coves you'll never find from the condo balcony.</p></div>
+      <div class="card"><h3>Perfect Weather</h3><p>PCB serves up rideable water nearly year-round. Bring sunscreen, not plans.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ── Postcards gallery ────────────────────────────────────── -->
-<section id="gallery" style="padding-top:0">
+<section id="gallery" class="alt">
   <div class="wrap">
-    <div class="sec-head">
-      <h2><span class="kicker">Postcards from the sand</span>Scenes from the fleet.</h2>
-      <p class="sub">Straight from the booths and the channel — no stock photos, no rented paradise.</p>
-    </div>
-    <div class="gallery">
-      <figure class="g-item g-4 wide">
-        <img src="photos/jet-ski-near-you.webp?v=20260916b" alt="Two riders heading offshore on a Yamaha VX jet ski from the Panama City Beach shoreline" width="800" height="591" loading="lazy">
-        <figcaption>Two up and gone — every ski seats one or two.</figcaption>
-      </figure>
-      <figure class="g-item g-2 tall">
-        <img src="photos/boat-tour.webp?v=20260916b" alt="Dolphins surfacing beside a tour boat in the Shell Island channel" width="800" height="800" loading="lazy">
-        <figcaption>The pod shadows the boats through the channel.</figcaption>
-      </figure>
-      <figure class="g-item g-2 tall">
-        <img src="photos/ocean-towers-11211-Front-Beach-Rd-Beach-Hut-Panama-City-Beach-FL-32407.webp?v=20260916b" alt="Yamaha VX jet skis staged on the sand at a Panhandle Watersports booth, ready for riders" width="400" height="300" loading="lazy">
-        <figcaption>Skis staged on the sand, waiting on you.</figcaption>
-      </figure>
-      <figure class="g-item g-4 wide">
-        <img src="photos/pontoon-01.webp?v=20260916b" alt="A pontoon boat anchored off a sandy stretch near Shell Island with clear shallow water" width="800" height="800" loading="lazy">
-        <figcaption>Slow days anchor off the sandbars too — pontoons welcome.</figcaption>
-      </figure>
-      <figure class="g-item g-3 sq">
-        <img src="photos/majestic-lifestyle-beachservice-600x400.webp?v=20260916b" alt="Beach booths with umbrellas set up on the sand in front of Panama City Beach resorts" width="600" height="400" loading="lazy">
-        <figcaption>Your booth, roughly here. Look for the flags.</figcaption>
-      </figure>
-      <figure class="g-item g-3 sq">
-        <img src="photos/edgewater.webp?v=20260916b" alt="Jet skis floating near the shore in front of a Panama City Beach resort at midday" width="400" height="300" loading="lazy">
-        <figcaption>Home waters: the beach behind the condos.</figcaption>
-      </figure>
+    <h2 class="sec">Postcards From The Gulf</h2>
+    <p class="sub">A sample of what a day out with Panhandle Watersports looks like.</p>
+    <div class="grid3">
+      <div class="ph"><img src="photos/dolphin-cruise-2.webp" alt="Dolphins swimming alongside a tour" loading="lazy"></div>
+      <div class="ph"><img src="photos/edgewater.webp" alt="Edgewater beach service setup on the sand" loading="lazy"></div>
+      <div class="ph"><img src="photos/pontoon-01.webp" alt="Pontoon boat ready for a calm-water day" loading="lazy"></div>
+      <div class="ph"><img src="photos/marina.webp" alt="Boats at the Panama City Beach marina" loading="lazy"></div>
+      <div class="ph"><img src="photos/starbird-1200x900.webp" alt="Starbird watersports craft on the water" loading="lazy"></div>
+      <div class="ph"><img src="photos/hut.webp" alt="Beach hut booth where rides start" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<!-- ── Find us + booking ────────────────────────────────────── -->
-<section id="book" class="book">
-  <div class="wrap book-grid">
-    <div class="book-info">
-      <span class="kicker">Find your booth</span>
-      <h2>Get on the water today.</h2>
-      <p style="color:var(--ink-70);max-width:44ch">Walk-ups welcome whenever skis are on the sand — or lock your slot ahead. Ask <b>Sandy</b>, bottom-right. She talks.</p>
-      <figure class="booth-photo">
-        <img src="photos/hut.webp?v=20260916b" alt="A Panhandle Watersports beach booth on the sand advertising jet ski rentals, dolphin tours and chair rentals" width="1600" height="1066" loading="lazy">
-        <figcaption>The main booth at 312 Bay Shore Drive.</figcaption>
-      </figure>
-      <ul class="info-list">
-        <li><span class="k">Call</span><span><a href="tel:8502969123">(850) 296-9123</a></span></li>
-        <li><span class="k">Main booth</span><span>312 Bay Shore Drive rentals booth, Panama City Beach, FL 32407</span></li>
-        <li><span class="k">Locations</span><span>10 booths along the beach — one a short walk from your condo</span></li>
-        <li><span class="k">License</span><span>Boater certificate if born on/after Jan 1, 1988 — issued on-site, valid one year</span></li>
-      </ul>
+<section id="how">
+  <div class="wrap">
+    <h2 class="sec">Sand To Spray In Three Steps</h2>
+    <p class="sub">No trailer, no dock, no drama.</p>
+    <div class="grid3">
+      <div class="step"><div class="n">1</div><div><h3>Walk To The Booth</h3><p style="color:var(--muted);font-size:.93rem">We're right on the beach behind the condos — 312 Bay Shore Drive booth plus 10 locations up and down the sand.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3>Quick Briefing</h3><p style="color:var(--muted);font-size:.93rem">Life jackets on, safety rundown done in minutes. First-timers welcome — genuinely.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>Blast Off</h3><p style="color:var(--muted);font-size:.93rem">Half hour or full hour. The Gulf is yours. Dolphins are downstream.</p></div></div>
     </div>
-    <form class="book-form" id="lead-form" novalidate>
-      <h3>Hold my ski</h3>
-      <p class="fh">Tell us the day — the <b>booth confirms by text</b>. Nothing is charged online.</p>
-      <div class="form-grid">
-        <div><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name" placeholder="Your name"></div>
-        <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="(850) 555-0123"></div>
-        <div><label for="f-len">Ride length</label><select id="f-len" name="len"><option>30 minutes</option><option>1 hour</option><option>Not sure</option></select></div>
-        <div><label for="f-riders">Riders</label><select id="f-riders" name="riders"><option>1</option><option>2</option><option>Whole crew</option></select></div>
-        <div><label for="f-date">Day</label><input id="f-date" name="date" type="date"></div>
-        <div><label for="f-time">Time</label><select id="f-time" name="time"><option>Morning</option><option>Midday</option><option>Afternoon</option><option>Flexible</option></select></div>
-        <div class="fw"><label for="f-notes">Anything else?</label><textarea id="f-notes" name="notes" rows="2" placeholder="First-timers, which condo you're near…"></textarea></div>
-        <div class="fw"><button class="btn btn-solid" type="submit">Hold My Ski</button></div>
+  </div>
+</section>
+
+<section class="alt" id="book">
+  <div class="wrap">
+    <div class="grid2">
+      <div>
+        <h2 class="sec">Get On The Water</h2>
+        <p class="sub">Walk-ups welcome when skis are on the sand — or lock your slot ahead. Ask <b>Sandy</b>, bottom-right. She talks.</p>
+        <div class="card" style="margin-top:18px">
+          <h3>Find Us</h3>
+          <p><b>Phone:</b> (850) 296-9123<br><b>Main Booth:</b> 312 Bay Shore Drive rentals booth, Panama City Beach, FL 32407<br><b>Locations:</b> 10 booths along the beach — right behind your condo<br><b>Requirements:</b> Boating cert if born on/after Jan 1, 1988 (issued on-site, good for a year)</p>
+        </div>
       </div>
-      <p id="form-ok" role="status">You're penciled in — the booth confirms by text. (Demo: captured locally.)</p>
-    </form>
+      <form class="card" id="lead-form">
+        <h3 style="margin-bottom:16px">Hold My Ski</h3>
+        <div class="form-grid">
+          <div><label for="f-name">Name *</label><input id="f-name" required placeholder="Your name"></div>
+          <div><label for="f-phone">Phone *</label><input id="f-phone" type="tel" required placeholder="(850) 555-0123"></div>
+          <div><label for="f-len">Ride Length</label><select id="f-len"><option>30 minutes</option><option>1 hour</option><option>Not sure</option></select></div>
+          <div><label for="f-riders">Riders</label><select id="f-riders"><option>1</option><option>2</option><option>Whole crew</option></select></div>
+          <div><label for="f-date">Day</label><input id="f-date" type="date"></div>
+          <div><label for="f-time">Time</label><select id="f-time"><option>Morning</option><option>Midday</option><option>Afternoon</option><option>Flexible</option></select></div>
+          <div class="full"><label for="f-notes">Anything else?</label><textarea id="f-notes" rows="2" placeholder="First-timers, which condo you're near…"></textarea></div>
+          <div class="full"><button class="cta" type="submit" style="width:100%">Hold My Ski</button></div>
+        </div>
+        <p id="form-ok" style="display:none;color:#0a7a4e;font-weight:700;margin-top:12px">✓ You're penciled in — the booth confirms by text. (Demo: captured locally.)</p>
+      </form>
+    </div>
   </div>
 </section>
-</main>
 
-<div class="demo-note"><b>DEMO WEBSITE</b> — Built by <b>BlueColumn AI</b> to show Panhandle Watersports what a modern site with a live AI guide could look like. Not affiliated with Panhandle Watersports.</div>
+<div class="demo-note">DEMO WEBSITE — Built by BlueColumn AI (bluecolumn.ai) to show Panhandle Watersports what a modern site with a live AI guide could look like. Not affiliated with Panhandle Watersports.</div>
 
-<!-- ── Footer ───────────────────────────────────────────────── -->
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <div class="fm">Panhandle <span class="amp">Watersports</span></div>
-        <p>The largest jet ski rental company on Panama City Beach — 50+ latest-model Yamaha VX skis at 10 beach booths, with Shell Island down the shore.</p>
-      </div>
-      <div class="foot-col wide">
-        <h4>Rides</h4>
-        <ul>
-          <li>30-minute rentals</li>
-          <li>1-hour Shell Island runs</li>
-          <li>Unguided &middot; 1&ndash;2 riders</li>
-          <li>On-site boater licenses</li>
-        </ul>
-      </div>
-      <div class="foot-col wide">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:8502969123">(850) 296-9123</a></li>
-          <li>312 Bay Shore Drive booth</li>
-          <li>Panama City Beach, FL 32407</li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Ready?</h4>
-        <ul>
-          <li><a href="#book">Hold My Ski</a></li>
-          <li><a href="#gallery">Postcards</a></li>
-        </ul>
-      </div>
+    <div class="grid4">
+      <div><h4>Panhandle Watersports</h4><p>The largest jet ski rental company on Panama City Beach. 50+ latest-model Yamaha VX skis, 10 beach booths.</p></div>
+      <div><h4>Rides</h4><ul><li>30-minute rentals</li><li>1-hour Shell Island runs</li><li>Unguided · 1–2 riders</li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:8502969123">(850) 296-9123</a></li><li>312 Bay Shore Drive booth</li><li>Panama City Beach, FL 32407</li></ul></div>
+      <div><h4>Ready?</h4><p>The beach is calling.</p><a class="cta" href="#book">Ride Today</a></div>
     </div>
-    <div class="colophon">
-      <span>&copy; 2026 Panhandle Watersports &middot; Panama City Beach, FL</span>
-      <span>Demo built by BlueColumn AI &middot; Not affiliated with panhandlewatersports.com</span>
-    </div>
+    <div class="foot-bottom">© 2026 Panhandle Watersports · Panama City Beach, FL</div>
   </div>
 </footer>
 
-<!-- ── Sandy — beach concierge (marina-agent wiring, ids unchanged) ── -->
-<button id="bot-fab" aria-expanded="false" aria-controls="bot-panel">
-  <img src="dolphin.jpg?v=20260916b" alt="Skippy, the Panhandle Watersports dolphin mascot">
-  Talk to Sandy
-</button>
-<div id="bot-panel" role="dialog" aria-label="Sandy, beach concierge chat">
-  <div class="bot-head">
-    <img id="bot-avatar" src="dolphin.jpg?v=20260916b" alt="Skippy the dolphin, Sandy's avatar">
-    <div class="who"><b>Sandy</b><small>Beach concierge &middot; live answers &middot; knows the water</small></div>
-    <div class="ctl">
-      <button id="bot-mute" title="Voice on/off">Sound</button>
-      <button id="bot-mic" class="bot-ctl" title="Talk hands-free">Mic</button>
-      <button id="bot-video" class="bot-ctl" title="Live video avatar">Video</button>
-    </div>
-  </div>
+<!-- Sandy — PERSON AGENT (Simli live avatar; dolphin mascot removed from the talking-avatar path) -->
+<button id="bot-fab"><span class="fab-ava">🏄</span> Talk to Sandy</button>
+<div id="bot-panel" role="dialog" aria-label="Sandy chat">
+  <div class="bot-head"><div id="bot-avatar" class="fab-ava" style="width:44px;height:44px;border-width:2px;font-size:1.2rem">🏄</div><div><b>Sandy</b><small>Live answers · knows the beach · books rides</small></div><button id="bot-mute" title="Voice on/off">🔊</button><button id="bot-mic" class="bot-ctl" title="Talk hands-free">🎤</button><button id="bot-video" class="bot-ctl" title="Live video avatar">🎥</button></div>
   <div id="bot-video-wrap" aria-hidden="true"><span id="bot-video-live"><i></i>LIVE</span><video id="bot-video-el" autoplay playsinline muted></video><audio id="bot-simli-audio" autoplay></audio></div>
   <div id="bot-log"></div>
   <div class="bot-input">
@@ -569,9 +298,11 @@ img#bot-avatar.talking{animation:bob .55s ease-in-out infinite alternate}
 
 <script>
 /* ═══════════════════════════════════════════════════════════════
-   SANDY — MARINA-GRADE PERSON AGENT CONFIG (BlueColumn AI)
-   Live BlueColumn brain, dynamic ElevenLabs voice, Simli person
-   avatar (video), one-voice guard. Wiring lives in marina-agent.js.
+   SANDY — MARINA-GRADE PERSON AGENT (BlueColumn AI)
+   Live BlueColumn brain, dynamic ElevenLabs voice (Brian), Simli
+   person avatar (video), one-voice guard. The old dolphin audio-bot
+   path (pre-rendered Skippy mp3 pack) is retired; audio/*.mp3 files
+   are kept in the repo but no longer used by the talking agent.
    Canned intents below are the OFFLINE FALLBACK only.
    ═══════════════════════════════════════════════════════════════ */
 window.BOT_CFG={
@@ -580,8 +311,8 @@ window.BOT_CFG={
   brainPrefix:'Panhandle Watersports customer question: ',
   faceId:'5fc23ea5-8175-4a82-aaaf-cdd8c88543dc',
   voiceId:'nPczCjzI2devNBz1zQrb',
-  greeting:"Hey hey! Sandy here. I answer live — pricing, dolphins, Shell Island, licenses — or say book me and I'll hold your ski. Tap Mic to talk hands-free, or Video to see me on camera.",
-  suggestions:['Pricing','Dolphins','Do I need a license?','Where are you?'],
+  greeting:"Hey hey! Sandy here. I answer live — pricing, dolphins, Shell Island, licenses — or say book me and I'll hold your ski. Tap 🎤 to talk hands-free, or 🎥 to see me on video.",
+  suggestions:['Pricing','Dolphins 🐬','Do I need a license?','Where are you?'],
   placeholder:'Ask about dolphins, pricing…',
   intents:[
     {k:['price','cost','how much','rate','half','hour','long'],t:"Rides run 30 minutes or a full hour — 1 or 2 riders, life jackets included. Half hour for the taste, the hour for the full Shell Island run. Grab the booth at 312 Bay Shore Drive or tap a booking below."},
@@ -605,7 +336,7 @@ document.getElementById('lead-form').addEventListener('submit',function(e){
   F('form-ok').style.display='block';e.target.reset();
 });
 </script>
-<script src="vendor/simli-client.js?v=20260916b"></script>
-<script src="marina-agent.js?v=20260916b"></script>
+<script src="vendor/simli-client.js?v=20260910a"></script>
+<script src="marina-agent.js?v=20260910a"></script>
 </body>
 </html>
