@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --deep:#05445e; --sea:#189ad3; --turq:#56cfe1; --sun:#ffb703; --coral:#fb5607;
-  --sand:#fff9ef; --ink:#0b2537; --muted:#587487; --line:#d9edf2;
+ --deep:#05445e; --sea:#189ad3; --turq:#56cfe1; --sun:#ffb703; --coral:#fb5607;
+ --sand:#fff9ef; --ink:#0b2537; --muted:#587487; --line:#d9edf2;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -36,7 +36,7 @@ nav.main a.navlink{text-decoration:none;color:var(--ink);font-weight:600;font-si
 .cta.ghost{background:transparent;color:#fff;border:2px solid #fff}
 
 header.hero{background:var(--deep);color:#fff;padding:64px 0 78px;position:relative;overflow:hidden}
-header.hero::before{content:"";position:absolute;bottom:-2px;left:-10%;width:120%;max-width:140%;height:60px;background:var(--sand);border-radius:50% 50% 0 0/100% 100% 0 0}
+header.hero::before{content:;position:absolute;bottom:-2px;left:-10%;width:120%;max-width:140%;height:60px;background:var(--sand);border-radius:50% 50% 0 0/100% 100% 0 0}
 header.hero .wrap{position:relative;z-index:1;display:flex;gap:36px;align-items:center}
 .hero-main{flex:1}
 .hero-chips{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
@@ -130,210 +130,210 @@ footer a{color:#cfeaf4;text-decoration:none}
 @keyframes breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,.985)}}
 
 @media(max-width:700px){
-  nav.main ul{display:none}
-  .topbar .wrap{flex-direction:column;gap:4px;font-size:.78rem;text-align:center}
-  .hero-ctas a.cta{flex:1;min-width:140px;text-align:center}
-  #bot-fab{bottom:calc(14px + env(safe-area-inset-bottom));right:14px;padding:10px 14px;font-size:.88rem}
-  #bot-panel{bottom:calc(70px + env(safe-area-inset-bottom));max-height:72vh}
-  #bot-log{height:min(280px,48vh)}
-  nav.main .cta{display:none}
-  #bot-fab{right:14px !important}
+ nav.main ul{display:none}
+ .topbar .wrap{flex-direction:column;gap:4px;font-size:.78rem;text-align:center}
+ .hero-ctas a.cta{flex:1;min-width:140px;text-align:center}
+ #bot-fab{bottom:calc(14px + env(safe-area-inset-bottom));right:14px;padding:10px 14px;font-size:.88rem}
+ #bot-panel{bottom:calc(70px + env(safe-area-inset-bottom));max-height:72vh}
+ #bot-log{height:min(280px,48vh)}
+ nav.main .cta{display:none}
+ #bot-fab{right:14px !important}
 }
 </style>
 </head>
 <body>
 
 <div class="topbar">
-  <div class="wrap">
-    <div><b>Largest jet ski operator on the beach</b> · 50+ skis · 10 booths</div>
-    <div>Open Daily · <a href="tel:8502969123">(850) 296-9123</a></div>
-  </div>
+ <div class="wrap">
+ <div><b>Largest jet ski operator on the beach</b> · 50+ skis · 10 booths</div>
+ <div>Open Daily · <a href="tel:8502969123">(850) 296-9123</a></div>
+ </div>
 </div>
 
 <nav class="main">
-  <div class="wrap">
-    <div class="logo"><img src="dolphin.jpg" alt="Panhandle Watersports dolphin">PANHANDLE <span style="color:var(--sea)">WATERSPORTS</span></div>
-    <ul>
-      <li><a class="navlink" href="#ride">The Ride</a></li>
-      <li><a class="navlink" href="#island">Shell Island</a></li>
-      <li><a class="navlink" href="#book">Find Us</a></li>
-    </ul>
-    <a class="cta" href="#book">Ride Today</a>
-  </div>
+ <div class="wrap">
+ <div class="logo"><img src="dolphin.jpg" alt="Panhandle Watersports dolphin">PANHANDLE <span style="color:var(--sea)">WATERSPORTS</span></div>
+ <ul>
+ <li><a class="navlink" href="#ride">The Ride</a></li>
+ <li><a class="navlink" href="#island">Shell Island</a></li>
+ <li><a class="navlink" href="#book">Find Us</a></li>
+ </ul>
+ <a class="cta" href="#book">Ride Today</a>
+ </div>
 </nav>
 
 <header class="hero">
-  <div class="wrap">
-    <div class="hero-main">
-      <div class="hero-chips">
-        <span class="chip">🏄 Unguided Rides</span>
-        <span class="chip">🛥️ 50+ New Yamaha VX Skis</span>
-        <span class="chip">10 Beach Booths</span>
-        <span class="chip">🛟 Life Jackets Included</span>
-      </div>
-      <h1>Right Behind Your Condo.<br><em>Dolphins Down The Shore.</em></h1>
-      <p class="lead">Hop on the latest Yamaha VX skis right on the sand at Panama City Beach. Half-hour blasts or full-hour Shell Island runs — no experience needed, no trailer, no drama.</p>
-      <div class="hero-ctas">
-        <a class="cta" href="#book">Grab A Ski</a>
-        <a class="cta ghost" href="tel:8502969123">Call (850) 296-9123</a>
-      </div>
-    </div>
-    <div class="hero-dolphin"><img src="dolphin.jpg" alt="Skippy the Panhandle Watersports dolphin"></div>
-  </div>
+ <div class="wrap">
+ <div class="hero-main">
+ <div class="hero-chips">
+ <span class="chip">Unguided Rides</span>
+ <span class="chip">50+ New Yamaha VX Skis</span>
+ <span class="chip">10 Beach Booths</span>
+ <span class="chip">Life Jackets Included</span>
+ </div>
+ <h1>Right Behind Your Condo.<br><em>Dolphins Down The Shore.</em></h1>
+ <p class="lead">Hop on the latest Yamaha VX skis right on the sand at Panama City Beach. Half-hour blasts or full-hour Shell Island runs — no experience needed, no trailer, no drama.</p>
+ <div class="hero-ctas">
+ <a class="cta" href="#book">Grab A Ski</a>
+ <a class="cta ghost" href="tel:8502969123">Call (850) 296-9123</a>
+ </div>
+ </div>
+ <div class="hero-dolphin"><img src="dolphin.jpg" alt="Skippy the Panhandle Watersports dolphin"></div>
+ </div>
 </header>
 
 <section id="ride">
-  <div class="wrap">
-    <h2 class="sec">The Ride</h2>
-    <p class="sub">Unguided means your rules. Point it at the horizon, or hug the shoreline and cruise — every rental comes with safety gear and a quick briefing.</p>
-    <div class="grid3">
-      <div class="card"><img class="cardphoto" src="photos/rent-a-jetski.webp" alt="Jet skis ready to rent right on the beach" loading="lazy"><span class="badge">30 MIN</span><h3>The Taste</h3><p>Half an hour of full-throttle fun — perfect between pool time and dinner.</p><ul><li>1 or 2 riders</li><li>Right on the beach</li><li>No experience needed</li></ul></div>
-      <div class="card"><img class="cardphoto" src="photos/jetski-with-dolphins.webp" alt="Riders running the shoreline with dolphins alongside" loading="lazy"><span class="badge">MOST FUN PER MINUTE</span><h3>The Full Hour</h3><p>The classic: run the shoreline, find the dolphins, chase the horizon.</p><ul><li>1 or 2 riders</li><li>Shell Island run in reach</li><li>Wildlife sightings common</li></ul></div>
-      <div class="card"><img class="cardphoto" src="photos/jet-ski-near-you.webp" alt="Jet ski booth right on the sand at Panama City Beach" loading="lazy"><span class="badge">LICENSE ON-SITE</span><h3>No License? No Problem</h3><p>Boating certificates issued right at the booths — good for a full year.</p><ul><li>Online course in ~20 min</li><li>Or get licensed at any booth</li><li>Born before 1988? Just ride</li></ul></div>
-    </div>
-  </div>
+ <div class="wrap">
+ <h2 class="sec">The Ride</h2>
+ <p class="sub">Unguided means your rules. Point it at the horizon, or hug the shoreline and cruise — every rental comes with safety gear and a quick briefing.</p>
+ <div class="grid3">
+ <div class="card"><img class="cardphoto" src="photos/rent-a-jetski.webp" alt="Jet skis ready to rent right on the beach" loading="lazy"><span class="badge">30 MIN</span><h3>The Taste</h3><p>Half an hour of full-throttle fun — perfect between pool time and dinner.</p><ul><li>1 or 2 riders</li><li>Right on the beach</li><li>No experience needed</li></ul></div>
+ <div class="card"><img class="cardphoto" src="photos/jetski-with-dolphins.webp" alt="Riders running the shoreline with dolphins alongside" loading="lazy"><span class="badge">MOST FUN PER MINUTE</span><h3>The Full Hour</h3><p>The classic: run the shoreline, find the dolphins, chase the horizon.</p><ul><li>1 or 2 riders</li><li>Shell Island run in reach</li><li>Wildlife sightings common</li></ul></div>
+ <div class="card"><img class="cardphoto" src="photos/jet-ski-near-you.webp" alt="Jet ski booth right on the sand at Panama City Beach" loading="lazy"><span class="badge">LICENSE ON-SITE</span><h3>No License? No Problem</h3><p>Boating certificates issued right at the booths — good for a full year.</p><ul><li>Online course in ~20 min</li><li>Or get licensed at any booth</li><li>Born before 1988? Just ride</li></ul></div>
+ </div>
+ </div>
 </section>
 
 <div class="strip">
-  <div class="wrap">
-    <div class="big">50+ skis. 10 booths. Zero waiting on the sand.</div>
-    The largest jet ski fleet on Panama City Beach, refreshed with the latest-model <b>Yamaha VX series</b> every season — up to two riders per ski, stationed right on the beach behind the condos.
-  </div>
+ <div class="wrap">
+ <div class="big">50+ skis. 10 booths. Zero waiting on the sand.</div>
+ The largest jet ski fleet on Panama City Beach, refreshed with the latest-model <b>Yamaha VX series</b> every season — up to two riders per ski, stationed right on the beach behind the condos.
+ </div>
 </div>
 
 <section class="alt" id="island">
-  <div class="wrap">
-    <h2 class="sec">Shell Island Country</h2>
-    <p class="sub">Crystal-clear water, sandbars, and the locals everyone comes to see.</p>
-    <div class="grid4">
-      <div class="card"><h3>Dolphins</h3><p>Bottlenose pods cruise the channel daily. Ride slow along the shore and they come say what's up.</p></div>
-      <div class="card"><h3>Sea Turtles</h3><p>Keep an eye out — sightings happen on quiet stretches of the run.</p></div>
-      <div class="card"><h3>Hidden Coves</h3><p>Sandy shores and coves you'll never find from the condo balcony.</p></div>
-      <div class="card"><h3>Perfect Weather</h3><p>PCB serves up rideable water nearly year-round. Bring sunscreen, not plans.</p></div>
-    </div>
-  </div>
+ <div class="wrap">
+ <h2 class="sec">Shell Island Country</h2>
+ <p class="sub">Crystal-clear water, sandbars, and the locals everyone comes to see.</p>
+ <div class="grid4">
+ <div class="card"><h3>Dolphins</h3><p>Bottlenose pods cruise the channel daily. Ride slow along the shore and they come say what's up.</p></div>
+ <div class="card"><h3>Sea Turtles</h3><p>Keep an eye out — sightings happen on quiet stretches of the run.</p></div>
+ <div class="card"><h3>Hidden Coves</h3><p>Sandy shores and coves you'll never find from the condo balcony.</p></div>
+ <div class="card"><h3>Perfect Weather</h3><p>PCB serves up rideable water nearly year-round. Bring sunscreen, not plans.</p></div>
+ </div>
+ </div>
 </section>
 
 <section id="gallery" class="alt">
-  <div class="wrap">
-    <h2 class="sec">Postcards From The Gulf</h2>
-    <p class="sub">A sample of what a day out with Panhandle Watersports looks like.</p>
-    <div class="grid3">
-      <div class="ph"><img src="photos/dolphin-cruise-2.webp" alt="Dolphins swimming alongside a tour" loading="lazy"></div>
-      <div class="ph"><img src="photos/edgewater.webp" alt="Edgewater beach service setup on the sand" loading="lazy"></div>
-      <div class="ph"><img src="photos/pontoon-01.webp" alt="Pontoon boat ready for a calm-water day" loading="lazy"></div>
-      <div class="ph"><img src="photos/marina.webp" alt="Boats at the Panama City Beach marina" loading="lazy"></div>
-      <div class="ph"><img src="photos/starbird-1200x900.webp" alt="Starbird watersports craft on the water" loading="lazy"></div>
-      <div class="ph"><img src="photos/hut.webp" alt="Beach hut booth where rides start" loading="lazy"></div>
-    </div>
-  </div>
+ <div class="wrap">
+ <h2 class="sec">Postcards From The Gulf</h2>
+ <p class="sub">A sample of what a day out with Panhandle Watersports looks like.</p>
+ <div class="grid3">
+ <div class="ph"><img src="photos/dolphin-cruise-2.webp" alt="Dolphins swimming alongside a tour" loading="lazy"></div>
+ <div class="ph"><img src="photos/edgewater.webp" alt="Edgewater beach service setup on the sand" loading="lazy"></div>
+ <div class="ph"><img src="photos/pontoon-01.webp" alt="Pontoon boat ready for a calm-water day" loading="lazy"></div>
+ <div class="ph"><img src="photos/marina.webp" alt="Boats at the Panama City Beach marina" loading="lazy"></div>
+ <div class="ph"><img src="photos/starbird-1200x900.webp" alt="Starbird watersports craft on the water" loading="lazy"></div>
+ <div class="ph"><img src="photos/hut.webp" alt="Beach hut booth where rides start" loading="lazy"></div>
+ </div>
+ </div>
 </section>
 
 <section id="how">
-  <div class="wrap">
-    <h2 class="sec">Sand To Spray In Three Steps</h2>
-    <p class="sub">No trailer, no dock, no drama.</p>
-    <div class="grid3">
-      <div class="step"><div class="n">1</div><div><h3>Walk To The Booth</h3><p style="color:var(--muted);font-size:.93rem">We're right on the beach behind the condos — 312 Bay Shore Drive booth plus 10 locations up and down the sand.</p></div></div>
-      <div class="step"><div class="n">2</div><div><h3>Quick Briefing</h3><p style="color:var(--muted);font-size:.93rem">Life jackets on, safety rundown done in minutes. First-timers welcome — genuinely.</p></div></div>
-      <div class="step"><div class="n">3</div><div><h3>Blast Off</h3><p style="color:var(--muted);font-size:.93rem">Half hour or full hour. The Gulf is yours. Dolphins are downstream.</p></div></div>
-    </div>
-  </div>
+ <div class="wrap">
+ <h2 class="sec">Sand To Spray In Three Steps</h2>
+ <p class="sub">No trailer, no dock, no drama.</p>
+ <div class="grid3">
+ <div class="step"><div class="n">1</div><div><h3>Walk To The Booth</h3><p style="color:var(--muted);font-size:.93rem">We're right on the beach behind the condos — 312 Bay Shore Drive booth plus 10 locations up and down the sand.</p></div></div>
+ <div class="step"><div class="n">2</div><div><h3>Quick Briefing</h3><p style="color:var(--muted);font-size:.93rem">Life jackets on, safety rundown done in minutes. First-timers welcome — genuinely.</p></div></div>
+ <div class="step"><div class="n">3</div><div><h3>Blast Off</h3><p style="color:var(--muted);font-size:.93rem">Half hour or full hour. The Gulf is yours. Dolphins are downstream.</p></div></div>
+ </div>
+ </div>
 </section>
 
 <section class="alt" id="book">
-  <div class="wrap">
-    <div class="grid2">
-      <div>
-        <h2 class="sec">Get On The Water</h2>
-        <p class="sub">Walk-ups welcome when skis are on the sand — or lock your slot ahead. Ask <b>Sandy</b>, bottom-right. She talks.</p>
-        <div class="card" style="margin-top:18px">
-          <h3>Find Us</h3>
-          <p><b>Phone:</b> (850) 296-9123<br><b>Main Booth:</b> 312 Bay Shore Drive rentals booth, Panama City Beach, FL 32407<br><b>Locations:</b> 10 booths along the beach — right behind your condo<br><b>Requirements:</b> Boating cert if born on/after Jan 1, 1988 (issued on-site, good for a year)</p>
-        </div>
-      </div>
-      <form class="card" id="lead-form">
-        <h3 style="margin-bottom:16px">Hold My Ski</h3>
-        <div class="form-grid">
-          <div><label for="f-name">Name *</label><input id="f-name" required placeholder="Your name"></div>
-          <div><label for="f-phone">Phone *</label><input id="f-phone" type="tel" required placeholder="(850) 555-0123"></div>
-          <div><label for="f-len">Ride Length</label><select id="f-len"><option>30 minutes</option><option>1 hour</option><option>Not sure</option></select></div>
-          <div><label for="f-riders">Riders</label><select id="f-riders"><option>1</option><option>2</option><option>Whole crew</option></select></div>
-          <div><label for="f-date">Day</label><input id="f-date" type="date"></div>
-          <div><label for="f-time">Time</label><select id="f-time"><option>Morning</option><option>Midday</option><option>Afternoon</option><option>Flexible</option></select></div>
-          <div class="full"><label for="f-notes">Anything else?</label><textarea id="f-notes" rows="2" placeholder="First-timers, which condo you're near…"></textarea></div>
-          <div class="full"><button class="cta" type="submit" style="width:100%">Hold My Ski</button></div>
-        </div>
-        <p id="form-ok" style="display:none;color:#0a7a4e;font-weight:700;margin-top:12px">✓ You're penciled in — the booth confirms by text. (Demo: captured locally.)</p>
-      </form>
-    </div>
-  </div>
+ <div class="wrap">
+ <div class="grid2">
+ <div>
+ <h2 class="sec">Get On The Water</h2>
+ <p class="sub">Walk-ups welcome when skis are on the sand — or lock your slot ahead. Ask <b>Sandy</b>, bottom-right. She talks.</p>
+ <div class="card" style="margin-top:18px">
+ <h3>Find Us</h3>
+ <p><b>Phone:</b> (850) 296-9123<br><b>Main Booth:</b> 312 Bay Shore Drive rentals booth, Panama City Beach, FL 32407<br><b>Locations:</b> 10 booths along the beach — right behind your condo<br><b>Requirements:</b> Boating cert if born on/after Jan 1, 1988 (issued on-site, good for a year)</p>
+ </div>
+ </div>
+ <form class="card" id="lead-form">
+ <h3 style="margin-bottom:16px">Hold My Ski</h3>
+ <div class="form-grid">
+ <div><label for="f-name">Name *</label><input id="f-name" required placeholder="Your name"></div>
+ <div><label for="f-phone">Phone *</label><input id="f-phone" type="tel" required placeholder="(850) 555-0123"></div>
+ <div><label for="f-len">Ride Length</label><select id="f-len"><option>30 minutes</option><option>1 hour</option><option>Not sure</option></select></div>
+ <div><label for="f-riders">Riders</label><select id="f-riders"><option>1</option><option>2</option><option>Whole crew</option></select></div>
+ <div><label for="f-date">Day</label><input id="f-date" type="date"></div>
+ <div><label for="f-time">Time</label><select id="f-time"><option>Morning</option><option>Midday</option><option>Afternoon</option><option>Flexible</option></select></div>
+ <div class="full"><label for="f-notes">Anything else?</label><textarea id="f-notes" rows="2" placeholder="First-timers, which condo you're near…"></textarea></div>
+ <div class="full"><button class="cta" type="submit" style="width:100%">Hold My Ski</button></div>
+ </div>
+ <p id="form-ok" style="display:none;color:#0a7a4e;font-weight:700;margin-top:12px">You're penciled in — the booth confirms by text. (Demo: captured locally.)</p>
+ </form>
+ </div>
+ </div>
 </section>
 
 <div class="demo-note">DEMO WEBSITE — Built by BlueColumn AI (bluecolumn.ai) to show Panhandle Watersports what a modern site with a live AI guide could look like. Not affiliated with Panhandle Watersports.</div>
 
 <footer>
-  <div class="wrap">
-    <div class="grid4">
-      <div><h4>Panhandle Watersports</h4><p>The largest jet ski rental company on Panama City Beach. 50+ latest-model Yamaha VX skis, 10 beach booths.</p></div>
-      <div><h4>Rides</h4><ul><li>30-minute rentals</li><li>1-hour Shell Island runs</li><li>Unguided · 1–2 riders</li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="tel:8502969123">(850) 296-9123</a></li><li>312 Bay Shore Drive booth</li><li>Panama City Beach, FL 32407</li></ul></div>
-      <div><h4>Ready?</h4><p>The beach is calling.</p><a class="cta" href="#book">Ride Today</a></div>
-    </div>
-    <div class="foot-bottom">© 2026 Panhandle Watersports · Panama City Beach, FL</div>
-  </div>
+ <div class="wrap">
+ <div class="grid4">
+ <div><h4>Panhandle Watersports</h4><p>The largest jet ski rental company on Panama City Beach. 50+ latest-model Yamaha VX skis, 10 beach booths.</p></div>
+ <div><h4>Rides</h4><ul><li>30-minute rentals</li><li>1-hour Shell Island runs</li><li>Unguided · 1–2 riders</li></ul></div>
+ <div><h4>Contact</h4><ul><li><a href="tel:8502969123">(850) 296-9123</a></li><li>312 Bay Shore Drive booth</li><li>Panama City Beach, FL 32407</li></ul></div>
+ <div><h4>Ready?</h4><p>The beach is calling.</p><a class="cta" href="#book">Ride Today</a></div>
+ </div>
+ <div class="foot-bottom">© 2026 Panhandle Watersports · Panama City Beach, FL</div>
+ </div>
 </footer>
 
 <!-- Sandy — PERSON AGENT (Simli live avatar; dolphin mascot removed from the talking-avatar path) -->
-<button id="bot-fab"><span class="fab-ava">🏄</span> Talk to Sandy</button>
+<button id="bot-fab"><span class="fab-ava"></span> Talk to Sandy</button>
 <div id="bot-panel" role="dialog" aria-label="Sandy chat">
-  <div class="bot-head"><div id="bot-avatar" class="fab-ava" style="width:44px;height:44px;border-width:2px;font-size:1.2rem">🏄</div><div><b>Sandy</b><small>Live answers · knows the beach · books rides</small></div><button id="bot-mute" title="Voice on/off">🔊</button><button id="bot-mic" class="bot-ctl" title="Talk hands-free">🎤</button><button id="bot-video" class="bot-ctl" title="Live video avatar">🎥</button></div>
-  <div id="bot-video-wrap" aria-hidden="true"><span id="bot-video-live"><i></i>LIVE</span><video id="bot-video-el" autoplay playsinline muted></video><audio id="bot-simli-audio" autoplay></audio></div>
-  <div id="bot-log"></div>
-  <div class="bot-input">
-    <input id="bot-in" placeholder="Ask about dolphins, pricing…" aria-label="Message Sandy">
-    <button id="bot-send">Send</button>
-  </div>
+ <div class="bot-head"><div id="bot-avatar" class="fab-ava" style="width:44px;height:44px;border-width:2px;font-size:1.2rem"></div><div><b>Sandy</b><small>Live answers · knows the beach · books rides</small></div><button id="bot-mute" title="Voice on/off"></button><button id="bot-mic" class="bot-ctl" title="Talk hands-free"></button><button id="bot-video" class="bot-ctl" title="Live video avatar"></button></div>
+ <div id="bot-video-wrap" aria-hidden="true"><span id="bot-video-live"><i></i>LIVE</span><video id="bot-video-el" autoplay playsinline muted></video><audio id="bot-simli-audio" autoplay></audio></div>
+ <div id="bot-log"></div>
+ <div class="bot-input">
+ <input id="bot-in" placeholder="Ask about dolphins, pricing…" aria-label="Message Sandy">
+ <button id="bot-send">Send</button>
+ </div>
 </div>
 
 <script>
 /* ═══════════════════════════════════════════════════════════════
-   SANDY — MARINA-GRADE PERSON AGENT (BlueColumn AI)
-   Live BlueColumn brain, dynamic ElevenLabs voice (Brian), Simli
-   person avatar (video), one-voice guard. The old dolphin audio-bot
-   path (pre-rendered Skippy mp3 pack) is retired; audio/*.mp3 files
-   are kept in the repo but no longer used by the talking agent.
-   Canned intents below are the OFFLINE FALLBACK only.
-   ═══════════════════════════════════════════════════════════════ */
+ SANDY — MARINA-GRADE PERSON AGENT (BlueColumn AI)
+ Live BlueColumn brain, dynamic ElevenLabs voice (Brian), Simli
+ person avatar (video), one-voice guard. The old dolphin audio-bot
+ path (pre-rendered Skippy mp3 pack) is retired; audio/*.mp3 files
+ are kept in the repo but no longer used by the talking agent.
+ Canned intents below are the OFFLINE FALLBACK only.
+ ═══════════════════════════════════════════════════════════════ */
 window.BOT_CFG={
-  name:'Sandy',
-  business:'Panhandle Watersports',
-  brainPrefix:'Panhandle Watersports customer question: ',
-  faceId:'5fc23ea5-8175-4a82-aaaf-cdd8c88543dc',
-  voiceId:'nPczCjzI2devNBz1zQrb',
-  greeting:"Hey hey! Sandy here. I answer live — pricing, dolphins, Shell Island, licenses — or say book me and I'll hold your ski. Tap 🎤 to talk hands-free, or 🎥 to see me on video.",
-  suggestions:['Pricing','Dolphins 🐬','Do I need a license?','Where are you?'],
-  placeholder:'Ask about dolphins, pricing…',
-  intents:[
-    {k:['price','cost','how much','rate','half','hour','long'],t:"Rides run 30 minutes or a full hour — 1 or 2 riders, life jackets included. Half hour for the taste, the hour for the full Shell Island run. Grab the booth at 312 Bay Shore Drive or tap a booking below."},
-    {k:['license','certificate','born','1988','permit','certifi'],t:"Quick Florida thing: born in 1988 or later? You need a boater certificate. Do the ~20-minute course online, or we issue your license right at the booth — and it's good for a whole year."},
-    {k:['dolphin','turtle','wildlife','shell island','animal','see'],t:"Oh, you're asking the right person. The water near Shell Island is crystal clear and the dolphins cruise through all day — sea turtles too. Ride the shoreline slow and they'll come say what's up."},
-    {k:['where','location','located','address','booth','condo','find you','directions'],t:"We're right on the beach behind the condos — main booth at 312 Bay Shore Drive, plus 10 booths up and down the sand with 50+ of the latest Yamaha VX skis. Wherever you're staying, there's one close by."},
-    {k:['book','reserve','rent','hold','today','slot','sign up'],t:"Easy — half hour or full hour, 1 or 2 riders. Tell me your day below and I'll pencil you in; the booth confirms by text. Or call the crew at (850) 296-9123."},
-    {k:['thank','thanks','cool','awesome','great','nice'],t:"Anytime, beach legend. See you on the water."},
-    {k:['hello','hi','hey','yo','sup','ahoy'],t:"Hey hey! Sandy here. Ask me about pricing, dolphins, Shell Island, licenses — or say book me and I'll hold your ski."}
-  ],
-  fallback:"Good one. I know pricing, Shell Island, dolphins, licenses, and getting you booked. Try me on one of those — or call the crew at (850) 296-9123."
+ name:'Sandy',
+ business:'Panhandle Watersports',
+ brainPrefix:'Panhandle Watersports customer question: ',
+ faceId:'5fc23ea5-8175-4a82-aaaf-cdd8c88543dc',
+ voiceId:'nPczCjzI2devNBz1zQrb',
+ greeting:"Hey hey! Sandy here. I answer live — pricing, dolphins, Shell Island, licenses — or say book me and I'll hold your ski. Tap to talk hands-free, or to see me on video.",
+ suggestions:['Pricing','Dolphins ','Do I need a license?','Where are you?'],
+ placeholder:'Ask about dolphins, pricing…',
+ intents:[
+ {k:['price','cost','how much','rate','half','hour','long'],t:"Rides run 30 minutes or a full hour — 1 or 2 riders, life jackets included. Half hour for the taste, the hour for the full Shell Island run. Grab the booth at 312 Bay Shore Drive or tap a booking below."},
+ {k:['license','certificate','born','1988','permit','certifi'],t:"Quick Florida thing: born in 1988 or later? You need a boater certificate. Do the ~20-minute course online, or we issue your license right at the booth — and it's good for a whole year."},
+ {k:['dolphin','turtle','wildlife','shell island','animal','see'],t:"Oh, you're asking the right person. The water near Shell Island is crystal clear and the dolphins cruise through all day — sea turtles too. Ride the shoreline slow and they'll come say what's up."},
+ {k:['where','location','located','address','booth','condo','find you','directions'],t:"We're right on the beach behind the condos — main booth at 312 Bay Shore Drive, plus 10 booths up and down the sand with 50+ of the latest Yamaha VX skis. Wherever you're staying, there's one close by."},
+ {k:['book','reserve','rent','hold','today','slot','sign up'],t:"Easy — half hour or full hour, 1 or 2 riders. Tell me your day below and I'll pencil you in; the booth confirms by text. Or call the crew at (850) 296-9123."},
+ {k:['thank','thanks','cool','awesome','great','nice'],t:"Anytime, beach legend. See you on the water."},
+ {k:['hello','hi','hey','yo','sup','ahoy'],t:"Hey hey! Sandy here. Ask me about pricing, dolphins, Shell Island, licenses — or say book me and I'll hold your ski."}
+ ],
+ fallback:"Good one. I know pricing, Shell Island, dolphins, licenses, and getting you booked. Try me on one of those — or call the crew at (850) 296-9123."
 };
 
 /* Lead form — demo captures locally; production wires to CRM/booking backend */
 const F=id=>document.getElementById(id);
 document.getElementById('lead-form').addEventListener('submit',function(e){
-  e.preventDefault();
-  const lead={name:F('f-name').value,phone:F('f-phone').value,len:F('f-len').value,riders:F('f-riders').value,date:F('f-date').value,time:F('f-time').value,notes:F('f-notes').value,at:new Date().toISOString()};
-  const leads=JSON.parse(localStorage.getItem('pws_leads')||'[]');leads.push(lead);
-  localStorage.setItem('pws_leads',JSON.stringify(leads));
-  F('form-ok').style.display='block';e.target.reset();
+ e.preventDefault();
+ const lead={name:F('f-name').value,phone:F('f-phone').value,len:F('f-len').value,riders:F('f-riders').value,date:F('f-date').value,time:F('f-time').value,notes:F('f-notes').value,at:new Date().toISOString()};
+ const leads=JSON.parse(localStorage.getItem('pws_leads')||'[]');leads.push(lead);
+ localStorage.setItem('pws_leads',JSON.stringify(leads));
+ F('form-ok').style.display='block';e.target.reset();
 });
 </script>
 <script src="vendor/simli-client.js?v=20260910a"></script>
